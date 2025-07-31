@@ -116,4 +116,4 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Initial load
     fetchJobs();
-});
+});/* Last updated by Naomi  on 2025-07-31 */
