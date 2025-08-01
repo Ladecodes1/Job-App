@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobHunt Fast - Remote Jobs</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>JobHunt Fast</h1>
+            <p>Find your next remote opportunity</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="filters">
+            <div class="filter-group">
+                <label for="role-filter"><i class="fas fa-briefcase"></i> Role</label>
+                <input type="text" id="role-filter" placeholder="e.g. Developer, Designer">
+            </div>
+            <div class="filter-group">
+                <label for="company-filter"><i class="fas fa-building"></i> Company</label>
+                <input type="text" id="company-filter" placeholder="Company name">
+            </div>
+            <div class="filter-group">
+                <label for="location-filter"><i class="fas fa-globe"></i> Location</label>
+                <input type="text" id="location-filter" placeholder="Country or City">
+            </div>
+            <button id="search-btn" class="btn">Search Jobs</button>
+        </section>
+
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Loading jobs...</p>
+        </div>
+
+        <section class="job-list" id="job-list">
+            <!-- Jobs will be inserted here by JavaScript -->
+        </section>
+
+        <div class="error-message" id="error-message"></div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Powered by <a href="https://www.arbeitnow.com/" target="_blank">ArbeitNow API</a></p>
+            <p>© 2023 JobHunt Fast</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
